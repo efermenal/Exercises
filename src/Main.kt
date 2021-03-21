@@ -3,7 +3,9 @@ import java.util.*
 import kotlin.collections.HashMap
 import kotlin.math.abs
 
-
+/*
+https://www.hackerrank.com/challenges/angry-professor/problem
+ */
 fun angryProfessor(k: Int, a: Array<Int>): String {
     var arrivedOnTime = 0
 
@@ -18,7 +20,9 @@ fun angryProfessor(k: Int, a: Array<Int>): String {
     }
     return  "YES"
 }
-
+/*
+https://www.hackerrank.com/challenges/migratory-birds/problem
+ */
 fun migratoryBirds(arr: Array<Int>): Int {
     val map = HashMap<Int, Int>()
     var lowestId = 0
@@ -42,8 +46,9 @@ fun migratoryBirds(arr: Array<Int>): Int {
 
     return lowestId
 }
-
-
+/*
+https://www.hackerrank.com/challenges/two-strings/problem
+ */
 fun twoStrings(s1: String, s2: String): String {
 
     val map : HashMap<Char,Int> = HashMap<Char, Int>()
@@ -58,7 +63,9 @@ fun twoStrings(s1: String, s2: String): String {
     }
     return "NO"
 }
-
+/*
+https://www.hackerrank.com/challenges/diagonal-difference/problem
+ */
 fun diagonalDifference(arr: Array<Array<Int>>): Int {
 
     var leftD = 0
@@ -78,6 +85,9 @@ fun diagonalDifference(arr: Array<Array<Int>>): Int {
     return abs(rightD - leftD)
 }
 
+/*
+https://www.hackerrank.com/challenges/2d-array/problem
+ */
 fun hourglassSum(arr: Array<Array<Int>>): Int {
 
     var maxSumHourglass = Int.MIN_VALUE
@@ -95,7 +105,9 @@ fun hourglassSum(arr: Array<Array<Int>>): Int {
     }
     return maxSumHourglass
 }
-
+/*
+https://www.hackerrank.com/challenges/balanced-brackets/problem
+ */
 fun isBalanced(s: String): String {
     val map = HashMap<Char, Char>()
     map.put(')', '(')
@@ -175,9 +187,6 @@ fun getLargestString(s : String, k: Int) : String{
 
 
    }while (map.isNotEmpty())
-
-
-
 
  return newWord.toString()
 
