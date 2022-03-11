@@ -163,7 +163,6 @@ fun getLargestString(s: String, k: Int): String {
     do {
         println("-> $map")
 
-
         for ((key, v) in result) {
             if (v > k) {
                 for (i in 1..k) {
@@ -247,6 +246,9 @@ fun strinfff(s: String, k: Int): String {
     return newWord.toString()
 }
 
+/*
+https://leetcode.com/problems/count-binary-substrings/
+ */
 fun countBinary(s: String): Int {
 
     var q = 0
@@ -301,10 +303,7 @@ fun compareStrings(a: String, b: String): String {
 }
 
 fun twins(a: Array<String>, b: Array<String>): Array<String> {
-    /*
-    val strings1: Array<String?> = arrayOfNulls<String>(10000)
-    val strings2: Array<String>  = Array(10000, {"string"})
-   */
+
     val sizeMinArray = Math.min(a.size, a.size)
     var arrayResult = Array<String>(sizeMinArray, { "No" })
 
@@ -319,7 +318,6 @@ fun twins(a: Array<String>, b: Array<String>): Array<String> {
 }
 
 fun main() {
-
     val result = twins(arrayOf("abcd", "abcd"), arrayOf("cbad", "adbc"))
     println(result.contentToString())
 }
